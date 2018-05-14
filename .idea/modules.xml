@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/inet-address/inet-address.iml" filepath="$PROJECT_DIR$/inet-address/inet-address.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tcp/tcp.iml" filepath="$PROJECT_DIR$/tcp/tcp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/udp/udp.iml" filepath="$PROJECT_DIR$/udp/udp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/url/url.iml" filepath="$PROJECT_DIR$/url/url.iml" />
       <module fileurl="file://$PROJECT_DIR$/websocket/websocket.iml" filepath="$PROJECT_DIR$/websocket/websocket.iml" />
     </modules>
   </component>
