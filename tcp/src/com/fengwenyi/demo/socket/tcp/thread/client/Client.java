@@ -18,6 +18,15 @@ public class Client {
             printWriter.write("用户名：admin；密码：admin");
             printWriter.flush();
 
+            // printWriter.close(); // 关闭输出流，导致socket关闭，因此不能关闭输出流
+
+            /*
+            传输对象
+            User user = new User("admin", 20);
+            ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
+            objectOutputStream.writeObject(user); // 系列化
+            */
+
             socket.shutdownOutput();
 
             InputStream inputStream = socket.getInputStream();
@@ -38,6 +47,8 @@ public class Client {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        // 总结，不用关闭输入/出（I/O）流，直接最后关闭socket就行
     }
 
 }
